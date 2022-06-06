@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  for (var i = 0; i < 100000; i++) {
+  for (var i = 0; i < 1000000; i++) {
     var fakke = new fakerModel({
       id: faker.random.uuid(),
       name: faker.name.firstName(),
